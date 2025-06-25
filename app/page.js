@@ -1,10 +1,13 @@
-import Image from "next/image";
+import Logo from "@/components/logo";
+import Nav from "@/components/nav";
 
 export default function Home() {
   return (
     <div>
-      <section>1</section>
-      <section>2</section>
+      <div className="flex flex-row items-center justify-items-center-safe mx-48 py-2">
+        <Logo />
+        <Nav />
+      </div>
     </div>
   );
 }
