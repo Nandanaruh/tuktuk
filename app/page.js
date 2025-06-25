@@ -91,8 +91,8 @@ export default function Home() {
         </div>
 
         {/* Logo + Nav over the image */}
-        <div className="absolute top-0 left-0 w-full z-10">
-          <div className="flex flex-row gap-4 items-center justify-evenly mx-40 py-2">
+        <div className="absolute  bg-gradient-to-b from-gray-950 ... top-0 left-0 w-full z-10">
+          <div className="flex flex-row  gap-4 items-center justify-evenly mx-40 py-2">
             <Logo />
             <Nav className="flex" />
           </div>
