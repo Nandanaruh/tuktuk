@@ -39,13 +39,13 @@ export default function Home() {
             <Nav className="flex" />
           </div>
         </div>
-        <div className="relative bg-repeat-x -mt-15 z-50">
+        <div className="relative repeat-x -mt-12 z-50">
           <Image
             src="/svg4.png"
             alt="Scratch"
-            width={400}
-            height={200}
-            className="w-full h-[200px] object-cover "
+            width={80}
+            height={48}
+            className="w-full h-[200px] object-cover"
           />
         </div>
       </section>
