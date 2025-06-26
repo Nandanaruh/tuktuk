@@ -11,7 +11,7 @@ export default function Logo() {
         alt=""
         width="100"
         height="100"
-        className="w-full h-full border-2 border-amber-400"
+        className="w-full h-full"
       />
     </Link>
   );
