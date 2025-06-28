@@ -34,7 +34,7 @@ export default function Home() {
               transform: `scale(${scale})`,
             }}
           />
-          <div className="absolute top-28 mt-16 left-0 w-full z-20 text-center text-white">
+          <div className="absolute top-28 mt-20 left-0 w-full z-20 text-center text-white">
             <p className="mt-2 text-lg font-amatic">
               TRAVEL LIKE A LOCAL, SUPPORT THE COMMUNITY
             </p>
