@@ -25,17 +25,28 @@ export default function Home() {
       </section>
 
       {/* HERO SECTION */}
-      <section className="relative h-[400vh]">
+      <section className="relative h-[2048px]">
         {/* Sticky Background Image with Zoom */}
         <div className="sticky top-0 h-screen w-full overflow-hidden z-0">
-          <Image
+          {/* <Image
             src="/background.jpg"
             alt="Hero Background"
-            width={1280}
-            height={1000}
-            className="w-full h-full object-cover transition-transform duration-300 ease-out"
+            width={1600}
+            height={2048}
+            className="w-full h-full transition-transform duration-300 ease-out"
             style={{ transform: `scale(${scale})` }}
-          />
+          /> */}
+          <div className="absolute inset-0">
+            <Image
+              src="/background.jpg"
+              alt="Hero Background"
+              fill
+              priority
+              className="object-cover transition-transform duration-300 ease-out"
+              style={{ transform: `scale(${scale})` }}
+            />
+          </div>
+
           <div className="absolute top-28 mt-16 left-0 w-full z-20 text-center text-white">
             <p className="mt-2 text-lg">
               TRAVEL LIKE A LOCAL, SUPPORT THE COMMUNITY
@@ -55,7 +66,7 @@ export default function Home() {
         </div>
 
         {/* Scratch Image */}
-        <div className="relative z-50 -mt-30">
+        <div className="relative z-50 -mt-25">
           <Image
             src="/svg.png"
             alt="Scratch"
