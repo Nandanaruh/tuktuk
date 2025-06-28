@@ -4,6 +4,9 @@ module.exports = {
       colors: {
         golden: "#ffc107",
       },
+      fontFamily: {
+        amatic: ['"Amatic SC"', "cursive"],
+      },
     },
   },
 };

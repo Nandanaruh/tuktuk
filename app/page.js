@@ -19,36 +19,23 @@ export default function Home() {
 
   return (
     <main className="w-full overflow-x-hidden">
-      {/* LOW SEASON FIRST */}
       <section className="w-full h-[60px] bg-amber-300 z-50 text-white">
         <LowSeason />
       </section>
-
-      {/* HERO SECTION */}
       <section className="relative h-[2048px]">
-        {/* Sticky Background Image with Zoom */}
         <div className="sticky top-0 h-screen w-full overflow-hidden z-0">
-          {/* <Image
+          <Image
             src="/background.jpg"
             alt="Hero Background"
-            width={1600}
-            height={2048}
-            className="w-full h-full transition-transform duration-300 ease-out"
-            style={{ transform: `scale(${scale})` }}
-          /> */}
-          <div className="absolute inset-0">
-            <Image
-              src="/background.jpg"
-              alt="Hero Background"
-              fill
-              priority
-              className="object-cover transition-transform duration-300 ease-out"
-              style={{ transform: `scale(${scale})` }}
-            />
-          </div>
-
+            fill
+            className="w-full h-full object-cover transition-transform duration-300 ease-out"
+            style={{
+              // objectPosition: "top center", // or "bottom", "left top", etc.
+              transform: `scale(${scale})`,
+            }}
+          />
           <div className="absolute top-28 mt-16 left-0 w-full z-20 text-center text-white">
-            <p className="mt-2 text-lg">
+            <p className="mt-2 text-lg font-amatic">
               TRAVEL LIKE A LOCAL, SUPPORT THE COMMUNITY
             </p>
             <h1 className="text-6xl font-bold">
@@ -56,28 +43,22 @@ export default function Home() {
             </h1>
           </div>
         </div>
-
-        {/* Logo & Nav Overlay */}
         <div className="absolute bg-gradient-to-b from-gray-950 top-0 left-0 w-full z-10">
           <div className="flex flex-row gap-4 items-center justify-evenly mx-40 py-2">
             <Logo />
             <Nav className="flex" />
           </div>
         </div>
-
-        {/* Scratch Image */}
-        <div className="relative z-50 -mt-25">
-          <Image
-            src="/svg.png"
-            alt="Scratch"
-            width={400}
-            height={220}
-            className="w-full h-[220px]"
-          />
-        </div>
+        <div
+          className="w-full h-[80px] -mt-15 relative z-50 transform -scale-y-100"
+          style={{
+            backgroundImage: "url('/brush.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+          }}
+        ></div>
       </section>
-
-      {/* ABOUT SECTION */}
       <section className="min-h-screen bg-white text-black px-20 py-32">
         <h2 className="text-4xl font-bold mb-6">About Us</h2>
         <p className="text-lg max-w-3xl leading-relaxed">
