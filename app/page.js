@@ -15,7 +15,7 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scale = Math.min(1 + scrollY * 0.0005, 1.15);
+  const scale = Math.min(1 + scrollY * 0.0007, 1.15);
 
   return (
     <main className="w-full overflow-x-hidden">
