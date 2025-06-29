@@ -28,8 +28,8 @@ export default function Background() {
           className="mt-2 text-lg font-bold"
           style={{
             fontFamily: "'Amatic SC', cursive",
-            fontSize: "35px",
-            fontWeight: "bold",
+            fontSize: "40px",
+            fontWeight: "700",
           }}
         >
           TRAVEL LIKE A LOCAL, SUPPORT THE COMMUNITY
