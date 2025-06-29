@@ -1,4 +1,22 @@
-import Freedom from "./freedom";
+import FreedomCard from "@/components/freedom-card";
+
+const cardData = [
+  {
+    image: "/freedom.jpg",
+    title: "Freedom To Explore",
+    content: `Your tuktuk adventure allows you to get off the beaten tourist trails and explore the hidden beauty of Sri Lanka. Be your own guide and enjoy the freedom to explore.`,
+  },
+  {
+    image: "/hassle.jpg",
+    title: "Hassle Free",
+    content: `Whether you’re travelling into the serene mountains or the sun-setting beach roads, our tuktuks provide a seamless journey. Say goodbye to transportation worries and enjoy a seamless ride.`,
+  },
+  {
+    image: "/social.jpg",
+    title: "Social Impact",
+    content: `tuktukrental.com empowers the local community by providing access to income from the thriving tourism industry.`,
+  },
+];
 
 export default function Unforgettable() {
   return (
@@ -35,9 +53,18 @@ export default function Unforgettable() {
         tourists miss.
       </p>
       <section className="flex flex-row items-center justify-center mx-40">
-        <Freedom />
-        <Freedom />
-        <Freedom />
+        <div className="w-full flex flex-col items-center justify-center gap-12 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {cardData.map((card, index) => (
+              <FreedomCard
+                key={index}
+                image={card.image}
+                title={card.title}
+                content={card.content}
+              />
+            ))}
+          </div>
+        </div>
       </section>
     </section>
   );
