@@ -5,7 +5,7 @@ module.exports = {
         golden: "#ffc107",
       },
       fontFamily: {
-        amatic: ['"Amatic SC"', "cursive"],
+        amatic: ["var(--font-amatic-sc)"],
       },
     },
   },

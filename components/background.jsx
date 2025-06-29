@@ -24,7 +24,10 @@ export default function Background() {
         }}
       />
       <div className="absolute top-28 mt-20 left-0 w-full z-20 text-center text-white">
-        <p className="mt-2 text-lg font-amatic">
+        <p
+          className="mt-2 text-lg font-amatic"
+          style={{ fontFamily: "'Amatic SC', cursive", fontSize: "30px" }}
+        >
           TRAVEL LIKE A LOCAL, SUPPORT THE COMMUNITY
         </p>
         <h1 className="text-6xl font-bold">

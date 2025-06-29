@@ -1,5 +1,4 @@
-import Head from "next/head";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Amatic_SC } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +8,12 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const amatic = Amatic_SC({
+  weight: ["400", "700"],
+  variable: "--font-amatic-sc",
   subsets: ["latin"],
 });
 
@@ -25,14 +30,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          href="https://fonts.google.com/specimen/Amatic+SC"
-          rel="stylesheet"
-        />
-      </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${amatic.variable} antialiased`}
       >
         {children}
       </body>
