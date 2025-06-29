@@ -6,6 +6,7 @@ import LowSeason from "@/components/lowSeason";
 import Background from "@/components/background";
 import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
+import Freedom from "@/components/freedom";
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
         <BackgroundSvg />
       </section>
       <Unforgettable />
+      {/* <section className="flex flex-col items-center justify-center">
+        <Freedom />
+        <Freedom />
+        <Freedom />
+      </section> */}
     </main>
   );
 }

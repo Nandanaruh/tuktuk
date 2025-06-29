@@ -1,3 +1,5 @@
+import Freedom from "./freedom";
+
 export default function Unforgettable() {
   return (
     <section
@@ -32,6 +34,11 @@ export default function Unforgettable() {
         Moreover get off the beaten track and find the amazing places other
         tourists miss.
       </p>
+      <section className="flex flex-row items-center justify-center mx-40">
+        <Freedom />
+        <Freedom />
+        <Freedom />
+      </section>
     </section>
   );
 }

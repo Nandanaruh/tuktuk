@@ -111,6 +111,16 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+.mask-svg {
+  mask-image: url("/frame-design.svg");
+  -webkit-mask-image: url("/frame-design.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
 
 @layer base {
   * {
