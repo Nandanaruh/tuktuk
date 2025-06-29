@@ -11,7 +11,11 @@ export default function Unforgettable() {
     >
       <p
         className="text-lg font-amatic text-sky-600"
-        style={{ fontFamily: "'Amatic SC', cursive", fontSize: "30px" }}
+        style={{
+          fontFamily: "'Amatic SC', cursive",
+          fontSize: "35px",
+          fontWeight: "bold",
+        }}
       >
         Embark on an Unforgettable Adventure
       </p>
