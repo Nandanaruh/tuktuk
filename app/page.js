@@ -7,6 +7,7 @@ import Background from "@/components/background";
 import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
 import Freedom from "@/components/freedom-card";
+import Extras from "@/components/extras";
 
 export default function Home() {
   return (
@@ -36,39 +37,8 @@ export default function Home() {
           }}
         />
       </section>
+      <Extras />
 
-      <section className="hero mb-20 z-20">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <div className="flex flex-col h-auto w-[580px]">
-            <div>
-              <p
-                className="text-lg font-amatic text-sky-700 px-4"
-                style={{
-                  fontFamily: "'Amatic SC', cursive",
-                  fontSize: "30px",
-                  fontWeight: "700",
-                }}
-              >
-                TRAVEL LIKE A LOCAL
-              </p>
-            </div>
-            <div>
-              <h2 className="mt-2 text-5xl font-amatic font-bold text-gray-800 px-4">
-                Our vehicles
-              </h2>
-            </div>
-            <div>
-              <p className="text-lg py-2 px-4">
-                Select your very own tuktuk and unleash your unique style with
-                our diverse range of options, including the RegularTuk,
-                CabrioTuk, and the ElectricTuk.{" "}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="brush-strip"></div>
-      </section>
       {/* <div>
         <section>
           <div
