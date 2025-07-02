@@ -4,7 +4,7 @@ import choiceYourExtras from "./choice-your-extras";
 
 export default function Extras() {
   return (
-    <section className="hero mb- pb-10 z-20">
+    <section className="hero pb-10 z-20">
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="flex flex-col h-auto w-[580px]">

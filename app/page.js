@@ -37,7 +37,10 @@ export default function Home() {
           }}
         />
       </section>
-      <Extras />
+      <div className="flex flex-row">
+        <Extras />
+        {/* <Extras /> */}
+      </div>
 
       {/* <div>
         <section>
