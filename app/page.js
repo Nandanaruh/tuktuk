@@ -7,6 +7,7 @@ import Background from "@/components/background";
 import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
 import Freedom from "@/components/freedom-card";
+import Extras from "@/components/extras";
 
 export default function Home() {
   return (
@@ -25,6 +26,43 @@ export default function Home() {
         <BackgroundSvg />
       </section>
       <Unforgettable />
+      <section>
+        <div
+          className="w-full mt-20 h-[80px] relative z-20 transform -scale-y-100"
+          style={{
+            backgroundImage: "url('/brush-gray.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+          }}
+        />
+      </section>
+      <Extras />
+
+      {/* <div>
+        <section>
+          <div
+            className="w-full h-[80px] relative z-0 transform -scale-y-100"
+            style={{
+              backgroundImage: "url('/brush-yellow.svg')",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+              backgroundSize: "auto 100%",
+            }}
+          />
+        </section>
+        <section>
+          <div
+            className="w-full h-[80px] relative z-0 transform scale-y-100"
+            style={{
+              backgroundImage: "url('/brush-yellow.svg')",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+              backgroundSize: "auto 100%",
+            }}
+          />
+        </section>
+      </div> */}
     </main>
   );
 }
