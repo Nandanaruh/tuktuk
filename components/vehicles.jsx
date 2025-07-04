@@ -34,19 +34,45 @@ export function CarouselSize() {
           }}
         >
           {vehiclesData.map((vehicle, index) => (
+            // <CarouselItem key={index} className="basis-1/2 px-2">
+            //   <div className="relative w-full h-48 mb-4">
+            //     <Image
+            //       src={vehicle.image}
+            //       alt={vehicle.title}
+            //       fill
+            //       className="object-contain rounded"
+            //     />
+            //   </div>
+            //   <Card className="p-4 w-full h-[500px] mt-20 bg-sky-500">
+            //     <CardContent className="space-y-1 text-center">
+            //       <h3 className="text-xl font-bold uppercase">
+            //         {vehicle.title}
+            //       </h3>
+            //       <p className="text-lg font-semibold text-amber-300 ">
+            //         {vehicle.price}
+            //       </p>
+            //       <p className="text-sm">{vehicle.description}</p>
+            //     </CardContent>
+            //   </Card>
+            // </CarouselItem>
             <CarouselItem key={index} className="basis-1/2 px-2">
-              <Card className="p-4">
-                <div className="relative w-full h-48 mb-4">
-                  <Image
-                    src={vehicle.image}
-                    alt={vehicle.title}
-                    fill
-                    className="object-contain rounded"
-                  />
-                </div>
-                <CardContent className="space-y-1 text-center">
-                  <h3 className="text-lg font-semibold">{vehicle.title}</h3>
-                  <p className="text-sm text-muted-foreground">
+              {/* Image Container */}
+              <div className="relative w-full h-64 z-50">
+                <Image
+                  src={vehicle.image}
+                  alt={vehicle.title}
+                  fill
+                  className="object-cover rounded-t-xl"
+                />
+              </div>
+
+              {/* Card Content below image */}
+              <Card className="-mt-20 relative z-10 w-full bg-sky-500 shadow-xl rounded-t-none rounded-b-xl">
+                <CardContent className="pt-24 px-4 text-center">
+                  <h3 className="text-xl font-bold uppercase">
+                    {vehicle.title}
+                  </h3>
+                  <p className="text-lg font-semibold text-amber-300">
                     {vehicle.price}
                   </p>
                   <p className="text-sm">{vehicle.description}</p>
