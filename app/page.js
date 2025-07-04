@@ -6,8 +6,8 @@ import LowSeason from "@/components/lowSeason";
 import Background from "@/components/background";
 import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
-import Freedom from "@/components/freedom-card";
 import Extras from "@/components/extras";
+import { CarouselSize } from "@/components/vehicles";
 
 export default function Home() {
   return (
@@ -44,7 +44,7 @@ export default function Home() {
             <Extras />
           </div>
           <div className="hero-content">
-            <p>Carousel</p>
+            <CarouselSize />
           </div>
         </div>
         <div className="brush-strip"></div>

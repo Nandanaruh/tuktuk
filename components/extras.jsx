@@ -42,7 +42,6 @@ export default function Extras() {
             key={index}
             className="flex items-start gap-4 p-2 border rounded-lg shadow"
           >
-            {/* Icon Placeholder */}
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
               <Image
                 src={item.icon}
@@ -50,15 +49,12 @@ export default function Extras() {
                 height={30}
                 alt={item.title}
                 className="invert-[60%] sepia-[100%] saturate-[750%] hue-rotate-[180deg] drop-shadow"
-                // optional: add transition, hover effects etc.
                 style={{
                   filter:
                     "invert(60%) sepia(100%) saturate(750%) hue-rotate(180deg)",
                 }}
               />
             </div>
-
-            {/* Text Content */}
             <div>
               <h3 className="text-md font-semibold ">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>
