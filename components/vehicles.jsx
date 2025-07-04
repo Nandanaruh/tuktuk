@@ -19,7 +19,7 @@ export function CarouselSize() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
-    }, 5000); // every 3 seconds
+    }, 4000); // every 3 seconds
     return () => clearInterval(interval);
   }, [maxIndex]);
 
@@ -29,34 +29,12 @@ export function CarouselSize() {
         <CarouselContent
           style={{
             transform: `translateX(-${(100 / visibleItems) * current}%)`,
-            transition: "transform 0.6s ease-in-out",
+            transition: "transform 0.6s ease-in",
             display: "flex",
           }}
         >
           {vehiclesData.map((vehicle, index) => (
-            // <CarouselItem key={index} className="basis-1/2 px-2">
-            //   <div className="relative w-full h-48 mb-4">
-            //     <Image
-            //       src={vehicle.image}
-            //       alt={vehicle.title}
-            //       fill
-            //       className="object-contain rounded"
-            //     />
-            //   </div>
-            //   <Card className="p-4 w-full h-[500px] mt-20 bg-sky-500">
-            //     <CardContent className="space-y-1 text-center">
-            //       <h3 className="text-xl font-bold uppercase">
-            //         {vehicle.title}
-            //       </h3>
-            //       <p className="text-lg font-semibold text-amber-300 ">
-            //         {vehicle.price}
-            //       </p>
-            //       <p className="text-sm">{vehicle.description}</p>
-            //     </CardContent>
-            //   </Card>
-            // </CarouselItem>
             <CarouselItem key={index} className="basis-1/2 px-2">
-              {/* Image Container */}
               <div className="relative w-full h-64 z-50">
                 <Image
                   src={vehicle.image}
@@ -65,17 +43,17 @@ export function CarouselSize() {
                   className="object-cover rounded-t-xl"
                 />
               </div>
-
-              {/* Card Content below image */}
-              <Card className="-mt-20 relative z-10 w-full bg-sky-500 shadow-xl rounded-t-none rounded-b-xl">
-                <CardContent className="pt-24 px-4 text-center">
-                  <h3 className="text-xl font-bold uppercase">
+              <Card className="-mt-44 relative h-[400px] z-10 w-full bg-sky-700 shadow-xl rounded-t-none rounded-b-xl">
+                <CardContent className="mt-20 pt-24 px-4 text-left">
+                  <h3 className="text-2xl text-white font-bold uppercase">
                     {vehicle.title}
                   </h3>
-                  <p className="text-lg font-semibold text-amber-300">
+                  <p className="text-xl font-semibold text-amber-300">
                     {vehicle.price}
                   </p>
-                  <p className="text-sm">{vehicle.description}</p>
+                  <p className="text-md text-white font-semibold text-justify">
+                    {vehicle.description}
+                  </p>
                 </CardContent>
               </Card>
             </CarouselItem>

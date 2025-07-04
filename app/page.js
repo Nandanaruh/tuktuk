@@ -43,7 +43,7 @@ export default function Home() {
           <div className="hero-content">
             <Extras />
           </div>
-          <div className="hero-content">
+          <div className="hero-content mt-15">
             <CarouselSize />
           </div>
         </div>
