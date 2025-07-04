@@ -6,8 +6,8 @@ import LowSeason from "@/components/lowSeason";
 import Background from "@/components/background";
 import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
-import Freedom from "@/components/freedom-card";
 import Extras from "@/components/extras";
+import { CarouselSize } from "@/components/vehicles";
 
 export default function Home() {
   return (
@@ -37,32 +37,18 @@ export default function Home() {
           }}
         />
       </section>
-      <Extras />
-
-      {/* <div>
-        <section>
-          <div
-            className="w-full h-[80px] relative z-0 transform -scale-y-100"
-            style={{
-              backgroundImage: "url('/brush-yellow.svg')",
-              backgroundRepeat: "repeat-x",
-              backgroundPosition: "center",
-              backgroundSize: "auto 100%",
-            }}
-          />
-        </section>
-        <section>
-          <div
-            className="w-full h-[80px] relative z-0 transform scale-y-100"
-            style={{
-              backgroundImage: "url('/brush-yellow.svg')",
-              backgroundRepeat: "repeat-x",
-              backgroundPosition: "center",
-              backgroundSize: "auto 100%",
-            }}
-          />
-        </section>
-      </div> */}
+      <section className="hero pb-10 z-20">
+        <div className="hero-overlay"></div>
+        <div className="flex flex-row">
+          <div className="hero-content">
+            <Extras />
+          </div>
+          <div className="hero-content mt-20">
+            <CarouselSize />
+          </div>
+        </div>
+        <div className="brush-strip"></div>
+      </section>
     </main>
   );
 }
