@@ -101,7 +101,7 @@ export function CarouselSize() {
         setIsTransitioning(true);
         setCurrent((prev) => (prev + 1) % itemCount);
       }
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [itemCount, isTransitioning]);
 
@@ -117,7 +117,7 @@ export function CarouselSize() {
 
   // Handle transition end
   const handleTransitionEnd = () => {
-    setIsTransitioning(false);
+    setIsTransitioning(true);
   };
 
   return (
@@ -149,7 +149,7 @@ export function CarouselSize() {
                   <h3 className="text-2xl text-white font-bold uppercase transition-colors duration-300">
                     {vehicle.title}
                   </h3>
-                  <p className="text-xl font-semibold text-amber-300 transition-colors duration-300">
+                  <p className="text-xl font-semibold text-amber-400 transition-colors duration-300">
                     {vehicle.price}
                   </p>
                   <p className="text-md text-white font-semibold text-justify transition-colors duration-300">
