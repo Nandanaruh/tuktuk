@@ -8,6 +8,7 @@ import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
 import Extras from "@/components/extras";
 import { CarouselSize } from "@/components/vehicles";
+import Review from "@/components/review";
 
 export default function Home() {
   return (
@@ -59,10 +60,9 @@ export default function Home() {
             backgroundSize: "auto 100%",
           }}
         />
-        <div
-          style={{ backgroundColor: "#f8e42f" }}
-          className="w-full h-[500px]"
-        ></div>
+        <div style={{ backgroundColor: "#f8e42f" }}>
+          <Review />
+        </div>
 
         {/* Repeat normal orientation multiple times */}
         <div
