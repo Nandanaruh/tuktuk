@@ -49,45 +49,28 @@ export default function Home() {
         </div>
         <div className="brush-strip"></div>
       </section>
-      {/* <section>
-        <div
-          className="w-full -mt-10 h-[80px] relative z-30 transform -scale-y-100"
-          style={{
-            backgroundImage: "url('/brush-yellow.svg')",
-            backgroundRepeat: "repeat-x",
-            backgroundPosition: "center",
-            backgroundSize: "auto 100%",
-          }}
-        />
-        <div
-          className="w-full h-[80px] relative z-30 transform scale-y-100"
-          style={{
-            backgroundImage: "url('/brush-yellow.svg')",
-            backgroundRepeat: "repeat-x",
-            backgroundPosition: "center",
-            backgroundSize: "auto 100%",
-          }}
-        />
-      </section> */}
       <section>
-        {/* Flipped Brush Area */}
+        {/* Flip and stack */}
         <div
           className="w-full -mt-10 h-[80px] relative z-30 transform -scale-y-100"
           style={{
             backgroundImage: "url('/brush-yellow.svg')",
             backgroundRepeat: "repeat",
-            backgroundPosition: "center",
-            backgroundSize: "auto",
+            backgroundSize: "auto 100%",
           }}
         />
-        {/* Normal Brush Area */}
         <div
-          className="w-full h-[80px] relative z-30 transform scale-y-100"
+          style={{ backgroundColor: "#f8e42f" }}
+          className="w-full h-[500px]"
+        ></div>
+
+        {/* Repeat normal orientation multiple times */}
+        <div
+          className="w-full h-[80px] relative z-30"
           style={{
             backgroundImage: "url('/brush-yellow.svg')",
             backgroundRepeat: "repeat",
-            backgroundPosition: "center",
-            backgroundSize: "auto",
+            backgroundSize: "auto 100%",
           }}
         />
       </section>
