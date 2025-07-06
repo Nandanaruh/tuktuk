@@ -49,6 +49,48 @@ export default function Home() {
         </div>
         <div className="brush-strip"></div>
       </section>
+      {/* <section>
+        <div
+          className="w-full -mt-10 h-[80px] relative z-30 transform -scale-y-100"
+          style={{
+            backgroundImage: "url('/brush-yellow.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+          }}
+        />
+        <div
+          className="w-full h-[80px] relative z-30 transform scale-y-100"
+          style={{
+            backgroundImage: "url('/brush-yellow.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+          }}
+        />
+      </section> */}
+      <section>
+        {/* Flipped Brush Area */}
+        <div
+          className="w-full -mt-10 h-[80px] relative z-30 transform -scale-y-100"
+          style={{
+            backgroundImage: "url('/brush-yellow.svg')",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            backgroundSize: "auto",
+          }}
+        />
+        {/* Normal Brush Area */}
+        <div
+          className="w-full h-[80px] relative z-30 transform scale-y-100"
+          style={{
+            backgroundImage: "url('/brush-yellow.svg')",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            backgroundSize: "auto",
+          }}
+        />
+      </section>
     </main>
   );
 }
