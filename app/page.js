@@ -13,7 +13,10 @@ import Review from "@/components/review";
 export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">
-      <section className="w-full h-[60px] bg-amber-300 z-50 text-white">
+      <section
+        id="low-season"
+        className="w-full h-[60px] bg-amber-300 z-50 text-white"
+      >
         <LowSeason />
       </section>
       <section className="relative h-full">
@@ -51,7 +54,6 @@ export default function Home() {
         <div className="brush-strip"></div>
       </section>
       <section>
-        {/* Flip and stack */}
         <div
           className="w-full -mt-10 h-[80px] relative z-30 transform -scale-y-100"
           style={{
@@ -63,8 +65,6 @@ export default function Home() {
         <div style={{ backgroundColor: "#f8e42f" }}>
           <Review />
         </div>
-
-        {/* Repeat normal orientation multiple times */}
         <div
           className="w-full h-[80px] relative z-30"
           style={{
