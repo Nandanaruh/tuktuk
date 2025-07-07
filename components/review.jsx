@@ -57,7 +57,7 @@ export default function Review() {
       <div className="flex flex-col items-start justify-center ml-4 w-1/2">
         <div className="my-2">
           <p
-            className="uppercase text-3xl text-sky-700 font-bold"
+            className="uppercase text-4xl text-sky-700 font-bold"
             style={{
               fontFamily: "'Amatic SC', cursive",
               fontSize: "30px",
@@ -68,19 +68,16 @@ export default function Review() {
           </p>
         </div>
         <div className="my-4">
-          <p className="text-6xl text-black font-bold">
-            Our Customers <br />
-            Love Us
+          <p className="text-6xl text-black font-bold max-w-lg">
+            Our Customers Love Us
           </p>
         </div>
         <div className="flex items-start text-left my-2">
-          <p className="text-xl">
-            Read our recent reviews to discover why our customers adore
-            <br /> us. We provide unparalleled travel experiences for our guests
-            by
-            <br /> crafting personalized itineraries, tips on how to travel like
-            a <br />
-            local, and offering round the clock planning and emergency support.
+          <p className="text-xl max-w-xl">
+            Read our recent reviews to discover why our customers adore us. We
+            provide unparalleled travel experiences for our guests by crafting
+            personalized itineraries, tips on how to travel like a local, and
+            offering round the clock planning and emergency support.
           </p>
         </div>
       </div>
