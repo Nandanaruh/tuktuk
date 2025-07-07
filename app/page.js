@@ -8,6 +8,7 @@ import BackgroundSvg from "@/components/backgroundSvg";
 import Unforgettable from "@/components/unforgettable";
 import Extras from "@/components/extras";
 import { CarouselSize } from "@/components/vehicles";
+import Review from "@/components/review";
 
 export default function Home() {
   return (
@@ -48,6 +49,30 @@ export default function Home() {
           </div>
         </div>
         <div className="brush-strip"></div>
+      </section>
+      <section>
+        {/* Flip and stack */}
+        <div
+          className="w-full -mt-10 h-[80px] relative z-30 transform -scale-y-100"
+          style={{
+            backgroundImage: "url('/brush-yellow.svg')",
+            backgroundRepeat: "repeat",
+            backgroundSize: "auto 100%",
+          }}
+        />
+        <div style={{ backgroundColor: "#f8e42f" }}>
+          <Review />
+        </div>
+
+        {/* Repeat normal orientation multiple times */}
+        <div
+          className="w-full h-[80px] relative z-30"
+          style={{
+            backgroundImage: "url('/brush-yellow.svg')",
+            backgroundRepeat: "repeat",
+            backgroundSize: "auto 100%",
+          }}
+        />
       </section>
     </main>
   );
