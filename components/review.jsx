@@ -24,7 +24,7 @@ export default function Review() {
             />
           </div>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center justify-center">
           <div className="mx-0.5">
             <Image
               src="/person-1.png"
