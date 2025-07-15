@@ -14,7 +14,7 @@ export default function FreedomCard({ image, title, content }) {
       <h2 className="mt-6 text-3xl font-amatic font-bold text-center text-gray-800 px-4">
         {title}
       </h2>
-      <p className="mt-6 text-lg text-center px-4">{content}</p>
+      <p className="mt-6 text-lg text-center sm:text-xl px-4">{content}</p>
     </div>
   );
 }

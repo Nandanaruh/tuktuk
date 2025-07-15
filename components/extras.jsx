@@ -19,12 +19,12 @@ export default function Extras() {
           </p>
         </div>
         <div>
-          <h2 className="mt-2 text-5xl font-amatic font-bold text-gray-800 px-4">
+          <h2 className="mt-2 text-5xl sm:w-[450px] font-amatic font-bold text-gray-800 px-4">
             Our vehicles
           </h2>
         </div>
         <div>
-          <p className="text-lg py-2 px-4">
+          <p className="w-[480px] sm:w-[480px] text-left lg:text-left sm:text-center lg:w-[580px] text-lg py-2 px-4 sm:text-xl">
             Select your very own tuktuk and unleash your unique style with our
             diverse range of options, including the RegularTuk, CabrioTuk, and
             the ElectricTuk.{" "}
@@ -36,7 +36,7 @@ export default function Extras() {
           </h2>
         </div>
       </div>
-      <div className="grid w-[580px] h-auto mt-10 gap-4">
+      <div className="grid w-[450px] sm:w-[450px] lg:w-[580px] h-auto mt-10 gap-4">
         {choiceYourExtras.map((item, index) => (
           <div
             key={index}
