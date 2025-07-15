@@ -41,7 +41,7 @@ export default function Home() {
           }}
         />
       </section>
-      <section className="hero pb-10 z-20">
+      {/* <section className="hero pb-10 z-20">
         <div className="hero-overlay"></div>
         <div className="flex flex-row">
           <div className="hero-content">
@@ -51,6 +51,24 @@ export default function Home() {
             <CarouselSize />
           </div>
         </div>
+        <div className="brush-strip"></div>
+      </section> */}
+      <section className="hero pb-10 z-20">
+        <div className="hero-overlay"></div>
+
+        {/* Responsive flex layout */}
+        <div className="flex flex-col lg:flex-row">
+          {/* Extras first on all screens */}
+          <div className="hero-content order-1">
+            <Extras />
+          </div>
+
+          {/* Vehicles carousel: order 2 on small screens, order 1 on large */}
+          <div className="hero-content mt-10 order-2 lg:order-1">
+            <CarouselSize />
+          </div>
+        </div>
+
         <div className="brush-strip"></div>
       </section>
       <section>
