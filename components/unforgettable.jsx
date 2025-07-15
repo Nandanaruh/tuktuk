@@ -22,7 +22,7 @@ const cardData = [
 export default function Unforgettable() {
   return (
     <section
-      className="flex flex-col h-screen w-full items-center justify-start bg-white my-2"
+      className="flex flex-col w-full items-center justify-start bg-white px-4 sm:px-6 sm:text-xl md:px-8 lg:px-12 xl:px-16"
       style={{
         backgroundImage: "url('/coconut-tree.jpg')",
         backgroundRepeat: "no-repeat",
@@ -31,9 +31,10 @@ export default function Unforgettable() {
       }}
     >
       <DriveYourOwn />
-      <section className="flex flex-row items-center justify-center mx-40">
-        <div className="w-full flex flex-col items-center justify-center gap-12 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <section className="w-full flex justify-center">
+        <div className="w-full max-w-screen-xl flex flex-col items-center justify-center gap-12 py-8 sm:py-10 md:py-12 lg:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
             {cardData.map((card, index) => (
               <FreedomCard
                 key={index}
