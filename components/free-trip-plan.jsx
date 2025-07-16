@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import freeTripPlanDetails from "./free-trip-plan-details";
+import { Button } from "./ui/button";
 
 export default function FreeTripPlan() {
   return (
@@ -28,6 +29,11 @@ export default function FreeTripPlan() {
       <div className="flex flex-row items-center justify-center w-full sm:w-[450px] lg:w-full h-auto mt-10 gap-4">
         {freeTripPlanDetails.map((item, index) => (
           <div key={index} className="bg-white  gap-4 p-2">
+            <div className="mb-4">
+              <Button className="w-full rounded-full uppercase">
+                {item.title}
+              </Button>
+            </div>
             <div className="flex items-center justify-center">
               <Image
                 src={item.image}
