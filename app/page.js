@@ -9,6 +9,7 @@ import Unforgettable from "@/components/unforgettable";
 import Extras from "@/components/extras";
 import { CarouselSize } from "@/components/vehicles";
 import Review from "@/components/review";
+import FreeTripPlan from "@/components/free-trip-plan";
 
 export default function Home() {
   return (
@@ -84,13 +85,18 @@ export default function Home() {
           <Review />
         </div>
         <div
-          className="w-full h-[80px] relative z-30"
+          className="w-full h-[80px] relative z-30 py-5"
           style={{
             backgroundImage: "url('/brush-yellow.svg')",
             backgroundRepeat: "repeat",
             backgroundSize: "auto 100%",
           }}
         />
+      </section>
+      <section className="relative h-[500px] w-full">
+        <div>
+          <FreeTripPlan />
+        </div>
       </section>
     </main>
   );
