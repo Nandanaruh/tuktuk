@@ -9,6 +9,8 @@ import Unforgettable from "@/components/unforgettable";
 import Extras from "@/components/extras";
 import { CarouselSize } from "@/components/vehicles";
 import Review from "@/components/review";
+import FreeTripPlan from "@/components/free-trip-plan";
+import TuktukVideo from "@/components/tuktuk-video";
 
 export default function Home() {
   return (
@@ -27,7 +29,7 @@ export default function Home() {
             <Nav className="flex" />
           </div>
         </div>
-        <BackgroundSvg />
+        <BackgroundSvg /> {/* White background svg */}
       </section>
       <Unforgettable />
       <section>
@@ -41,18 +43,6 @@ export default function Home() {
           }}
         />
       </section>
-      {/* <section className="hero pb-10 z-20">
-        <div className="hero-overlay"></div>
-        <div className="flex flex-row">
-          <div className="hero-content">
-            <Extras />
-          </div>
-          <div className="hero-content mt-20">
-            <CarouselSize />
-          </div>
-        </div>
-        <div className="brush-strip"></div>
-      </section> */}
       <section className="hero pb-10 z-20">
         <div className="hero-overlay"></div>
 
@@ -62,13 +52,11 @@ export default function Home() {
           <div className="hero-content order-1">
             <Extras />
           </div>
-
           {/* Vehicles carousel: order 2 on small screens, order 1 on large */}
           <div className="hero-content mt-10 order-2 lg:order-1">
             <CarouselSize />
           </div>
         </div>
-
         <div className="brush-strip"></div>
       </section>
       <section>
@@ -84,11 +72,45 @@ export default function Home() {
           <Review />
         </div>
         <div
-          className="w-full h-[80px] relative z-30"
+          className="w-full h-[80px] relative z-30 py-5"
           style={{
             backgroundImage: "url('/brush-yellow.svg')",
             backgroundRepeat: "repeat",
             backgroundSize: "auto 100%",
+          }}
+        />
+      </section>
+      <section className="relative h-[600px] w-full my-10">
+        <div>
+          <FreeTripPlan />
+        </div>
+      </section>
+      <section className="relative mt-10 w-full overflow-hidden">
+        {/* Top Brush Overlap */}
+        <div
+          className="absolute top-0 left-0 w-full h-[80px] z-50"
+          style={{
+            backgroundImage: "url('/brush.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+          }}
+        />
+
+        {/* Video */}
+        <div className="relative z-10">
+          <TuktukVideo />
+        </div>
+
+        {/* Bottom Brush Overlap */}
+        <div
+          className="absolute bottom-0 left-0 w-full h-[80px] z-50"
+          style={{
+            backgroundImage: "url('/brush.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+            transform: "rotate(180deg)",
           }}
         />
       </section>
