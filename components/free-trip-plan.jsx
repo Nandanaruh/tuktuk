@@ -50,6 +50,11 @@ export default function FreeTripPlan() {
           </div>
         ))}
       </div>
+      <div className="flex flex-col text-center justify-center items-center text-lg my-4">
+        <Button className="w-[350px] rounded-full uppercase border-1 border-gray-900 text-lg bg-white text-gray-border-gray-900 hover:bg-gray-900 hover:text-white">
+          Meet the whole crew
+        </Button>
+      </div>
     </div>
   );
 }

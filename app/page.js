@@ -80,16 +80,39 @@ export default function Home() {
           }}
         />
       </section>
-      <section className="relative h-[500px] w-full">
+      <section className="relative h-[600px] w-full my-10">
         <div>
           <FreeTripPlan />
         </div>
-        <div className="relative mt-20 -scale-y-100">
-          <BackgroundSvg />
-        </div>
-        <div>
+      </section>
+      <section className="relative mt-10 w-full overflow-hidden">
+        {/* Top Brush Overlap */}
+        <div
+          className="absolute top-0 left-0 w-full h-[80px] z-50"
+          style={{
+            backgroundImage: "url('/brush.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+          }}
+        />
+
+        {/* Video */}
+        <div className="relative z-10">
           <TuktukVideo />
         </div>
+
+        {/* Bottom Brush Overlap */}
+        <div
+          className="absolute bottom-0 left-0 w-full h-[80px] z-50"
+          style={{
+            backgroundImage: "url('/brush.svg')",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            backgroundSize: "auto 100%",
+            transform: "rotate(180deg)",
+          }}
+        />
       </section>
     </main>
   );
