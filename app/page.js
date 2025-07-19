@@ -19,7 +19,7 @@ export default function Home() {
       <main className="w-full overflow-x-hidden">
         <section
           id="low-season"
-          className="w-full h-[60px] bg-amber-300 z-50 text-white"
+          className="flex flex-row w-full h-[100px] items-center justify-center text-center sm:flex-row md:flex-row lg:flex-row xl:flex-row sm:text-center md:text-center lg:text-center xl:text-center sm:h-[100px] md:h-[60px] lg:h-[60px] xl:h-[60px] bg-amber-300 z-50 text-white"
         >
           <LowSeason />
         </section>
